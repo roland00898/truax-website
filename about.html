@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__SM=window.matchMedia('(max-width: 820px)').matches;window.__A=function(p){return window.__SM&&typeof p==='string'?p.replace(/^(\.\/|assets\/)/,'assets-sm/'):p;};</script>
+<style>
+    @media (max-width: 820px) {
+      [data-page-bg] { background-image: url('assets-sm/tile-mosaic-bg.jpg') !important; }
+      [data-hero] { background-image: url('assets-sm/titlecard-imber.jpg') !important; }
+    }
+  </style>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;family=Cormorant+Garamond:wght@400;500;600&amp;display=swap">
+  <style>
+    @media (max-width: 760px) {
+      [data-hero] { height: 64vh !important; min-height: 400px !important; background-position: 55% 48% !important; }
+      [data-hero] > [role="img"] { background-position: 55% 48% !important; }
+    }
+    [data-mobile-menu] { display: none; }
+    [data-mobile-menu] summary { list-style: none; cursor: pointer; }
+    [data-mobile-menu] summary::-webkit-details-marker { display: none; }
+    @media (max-width: 1024px) {
+      [data-desktop-nav] { display: none !important; }
+      [data-mobile-menu] { display: block !important; }
+    }
+    @media (max-width: 760px) {
+      [data-glass-bar] { gap: 10px !important; padding: 0 14px !important; }
+    }
+    @media (max-width: 860px) {
+      [data-about-card] { grid-template-columns: minmax(0, 1fr) !important; }
+      [data-about-card] > * { justify-self: start !important; }
+    }
+    body { margin: 0; }
+    [data-glass] { -webkit-backdrop-filter: blur(30px) saturate(1.7); }
+    a { color: #1b1b1a; }
+    a:hover { color: #6b6b66; }
+  </style>
+</helmet>
+
+<div style="background: #eceef1; fontFamily: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1b1b1a">
+
+
+  <div data-page-bg="true" style="position: fixed; inset: 0; zIndex: 0; backgroundImage: url('assets/tile-mosaic-bg.jpg'); backgroundSize: cover; backgroundPosition: 50% 72%; filter: {{ bgFilter }}; transform: scale(1.02); pointerEvents: none"></div>
+  <div style="position: fixed; inset: 0; zIndex: 0; background: {{ bgVeil }}; pointerEvents: none"></div>
+  <div style="position: sticky; top: 0; zIndex: 10; height: 0">
+    <div style="padding: 14px 24px">
+    <div style="maxWidth: 1120px; margin: 0 auto; transform: translateX(calc(-1 * min(48px, max(0px, (100vw - 48px - 1120px) / 2))))">
+      
+    </div><div data-glass="true" data-glass-bar="true" style="position: relative; display: grid; gridTemplateColumns: 1fr auto 1fr; alignItems: center; gap: 32px; minHeight: 62px; padding: 0 26px; borderRadius: 999px; background: {{ barBg }}; transition: background 260ms ease; backdropFilter: blur(30px) saturate(1.7); WebkitBackdropFilter: blur(30px) saturate(1.7); border: 1px solid transparent; borderTopColor: rgba(255,255,255,0.5); borderLeftColor: rgba(255,255,255,0.4); boxShadow: inset 0 0 26px rgba(255,255,255,0.2), 0 12px 34px rgba(20,20,18,0.16)">
+        
+        <a href="https://www.instagram.com/truaxconstruction/" target="_blank" rel="noopener" aria-label="Instagram" style="justifySelf: start; position: relative; width: 24px; height: 24px; borderRadius: 8px; border: 2.4px solid rgba(255,255,255,0.92); display: block; opacity: 0.9; transition: opacity 200ms ease, background 200ms ease" style-hover="opacity: 1; background: rgba(255,255,255,0.14)">
+          <span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 10px; height: 10px; borderRadius: 999px; border: 2.4px solid rgba(255,255,255,0.92)"></span>
+          <span style="position: absolute; right: 2px; top: 2px; width: 4px; height: 4px; borderRadius: 999px; background: rgba(255,255,255,0.9)"></span>
+        </a>
+        <a href="index.html" style="justifySelf: center; display: block; lineHeight: 0"><img src="assets/truax-logo-white-inline.png" alt="Truax Construction — home" style="justifySelf: center; width: clamp(180px, 46vw, 440px); height: auto; display: block; filter: drop-shadow(0 1px 8px rgba(0,0,0,0.35))"></a><div data-desktop-nav="true" style="justifySelf: end; display: flex; flexShrink: 0; gap: 6px; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontWeight: 500; fontSize: 12.5px; letterSpacing: 0.2em; textTransform: uppercase">
+          <a href="about.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; padding: 7px 12px; borderRadius: 999px; background: rgba(255,255,255,0.16)">About</a>
+          <a href="projects.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; opacity: 0.88; padding: 7px 12px; borderRadius: 999px; transition: background 200ms ease, opacity 200ms ease" style-hover="background: rgba(255,255,255,0.16); opacity: 1">Projects</a>
+          <a href="services.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; opacity: 0.88; padding: 7px 12px; borderRadius: 999px; transition: background 200ms ease, opacity 200ms ease" style-hover="background: rgba(255,255,255,0.16); opacity: 1">Services</a>
+          <a href="contact.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; opacity: 0.88; padding: 7px 12px; borderRadius: 999px; transition: background 200ms ease, opacity 200ms ease" style-hover="background: rgba(255,255,255,0.16); opacity: 1">Contact</a>
+        </div>
+        <details data-mobile-menu style="justifySelf: end; position: relative">
+          <summary aria-label="Menu" style="display: flex; alignItems: center; justifyContent: center; width: 44px; height: 44px; borderRadius: 999px; color: #ffffff">
+            <span style="display: block; width: 20px; height: 12px; borderTop: 2px solid rgba(255,255,255,0.92); borderBottom: 2px solid rgba(255,255,255,0.92); position: relative">
+              <span style="position: absolute; left: 0; right: 0; top: 4px; height: 2px; background: rgba(255,255,255,0.92)"></span>
+            </span>
+          </summary>
+          <div style="position: absolute; right: 0; top: 52px; minWidth: 200px; display: flex; flexDirection: column; padding: 10px; borderRadius: 20px; background: rgba(22,23,24,0.72); backdropFilter: blur(26px) saturate(1.4); WebkitBackdropFilter: blur(26px) saturate(1.4); border: 1px solid rgba(255,255,255,0.22); boxShadow: 0 22px 48px rgba(0,0,0,0.42)">
+            <a href="about.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">About</a>
+            <a href="projects.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Projects</a>
+            <a href="services.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Services</a>
+            <a href="contact.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Contact</a>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </div>
+
+  <div data-hero="true" style="position: relative; zIndex: 1; height: 82vh; minHeight: 560px; overflow: hidden; background-image: url('assets/titlecard-imber.jpg'); backgroundSize: cover; backgroundPosition: 62% 46%; backgroundRepeat: no-repeat">
+    <div style="position: absolute; left: 0; right: 0; top: 0; height: 260px; background: linear-gradient(to bottom, rgba(16,18,20,0.5) 0%, rgba(16,18,20,0.22) 55%, rgba(16,18,20,0) 100%); pointerEvents: none"></div>
+    <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 clamp(14px, 2vw, 28px) clamp(32px, 6vw, 56px)">
+      <div style="maxWidth: 1760px; margin: 0 auto">
+        <div style="color: #ffffff; fontSize: clamp(28px, 7vw, 44px); lineHeight: 1.12; letterSpacing: -0.01em; textWrap: pretty; textShadow: 0 2px 22px rgba(0,0,0,0.42); maxWidth: 15em">About Truax</div>
+      </div>
+    </div>
+    <div style="position: absolute; left: 0; right: 0; bottom: 22px; display: flex; justifyContent: center; pointerEvents: none; opacity: {{ cueOpacity }}">
+      <svg width="22" height="30" viewBox="0 0 22 30" fill="none" aria-hidden="true">
+        <path d="M11 1 L11 25 M3 18 L11 26 L19 18" stroke="rgba(255,255,255,0.85)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+  </div>
+
+  <div style="position: relative; zIndex: 1; maxWidth: 1760px; margin: 0 auto; padding: clamp(28px, 6vw, 56px) clamp(14px, 2vw, 28px) 140px; display: flex; flexDirection: column; gap: 48px">
+    <div ref="{{ revealRef }}" data-glass="true" data-about-card="true" style="padding: clamp(24px, 6vw, 40px) clamp(18px, 3vw, 44px); borderRadius: 20px; background: rgba(255,255,255,0.5); backdropFilter: blur(30px) saturate(0.85); WebkitBackdropFilter: blur(30px) saturate(0.85); border: 1px solid transparent; borderTopColor: rgba(255,255,255,0.55); borderLeftColor: rgba(255,255,255,0.45); boxShadow: inset 0 0 26px rgba(255,255,255,0.2), 0 12px 34px rgba(20,20,18,0.12); display: grid; gridTemplateColumns: minmax(0, 1fr) minmax(0, 44em); gap: clamp(20px, 4vw, 48px); alignItems: start">
+      <div style="justifySelf: start; fontSize: 13px; letterSpacing: 0.14em; textTransform: uppercase; opacity: {{ r1o }}; transform: {{ r1t }}; filter: {{ r1b }}; willChange: opacity, transform, filter">Who we are</div>
+      <div data-about-copy="true" style="justifySelf: end; display: flex; flexDirection: column; gap: 24px">
+        <div style="fontFamily: Cambria, Georgia, 'Times New Roman', serif; fontSize: 19px; lineHeight: 1.65; letterSpacing: 0.005em; color: #000000; textWrap: pretty; opacity: {{ r2o }}; transform: {{ r2t }}; filter: {{ r2b }}; willChange: opacity, transform, filter">Truax Construction is a premier residential construction company based in San Antonio, Texas. For over 30 years, we have completed numerous projects and renovations throughout the San Antonio area. While maintaining a high quality of work, Truax Construction is recognized and respected in the field.</div>
+        <div style="fontFamily: Cambria, Georgia, 'Times New Roman', serif; fontSize: 19px; lineHeight: 1.4; color: #000000; textWrap: pretty; opacity: {{ r3o }}; transform: {{ r3t }}; filter: {{ r3b }}; willChange: opacity, transform, filter">We build with care, pride, and a heart for Jesus Christ.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { barDark: false, p: 0, calm: false , bgP: 0 };
+  componentDidMount() {
+    const rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+    this._rm = rm;
+    this._onRm = () => this.setState({ calm: rm.matches });
+    rm.addEventListener('change', this._onRm);
+    this._onRm();
+    this._onProgress = () => {
+      const el = this._revealEl;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight || 1;
+      // 0 while the block is still a third of a viewport below the fold, 1 once it sits comfortably in view
+      const raw = (vh * 0.92 - rect.top) / (vh * 0.42);
+      const p = Math.max(0, Math.min(1, raw));
+      if (Math.abs(p - this.state.p) > 0.004) this.setState({ p: p });
+    };
+    this._tick = () => {
+      this._raf = null;
+      this._onProgress();
+    };
+    this._queue = () => { if (!this._raf) this._raf = requestAnimationFrame(this._tick); };
+    this._onBg = () => {
+      this._bgRaf = null;
+      const vh = window.innerHeight || 1;
+      const bgP = Math.max(0, Math.min(1, window.scrollY / (vh * 0.4)));
+      const hero = document.querySelector('[data-hero]');
+      // hand off to the dark bar the moment the glass capsule (bottom edge at y 78)
+      // stops overlapping the hero photo
+      const dark = !hero || hero.getBoundingClientRect().bottom <= 78;
+      if (dark !== this.state.barDark || Math.abs(bgP - this.state.bgP) > 0.004) {
+        this.setState({ bgP: bgP, barDark: dark });
+      }
+    };
+    this._bgQueue = () => { if (!this._bgRaf) this._bgRaf = requestAnimationFrame(this._onBg); };
+    window.addEventListener('scroll', this._bgQueue, { passive: true });
+    window.addEventListener('resize', this._bgQueue);
+    this._onBg();
+    window.addEventListener('scroll', this._queue, { passive: true });
+    window.addEventListener('resize', this._queue);
+    this._onProgress();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._bgQueue);
+    window.removeEventListener('resize', this._bgQueue);
+    if (this._bgRaf) cancelAnimationFrame(this._bgRaf);
+    window.removeEventListener('scroll', this._queue);
+    window.removeEventListener('resize', this._queue);
+    if (this._raf) cancelAnimationFrame(this._raf);
+    if (this._rm) this._rm.removeEventListener('change', this._onRm);
+  }
+  renderVals() {
+    const p = this.state.p;
+    // each line runs over its own slice of the same scroll range, so they trail slightly
+    const slice = (start) => Math.max(0, Math.min(1, (p - start) / (1 - start)));
+    const calm = this.state.calm;
+    const ease = (t) => (calm ? 1 : 1 - Math.pow(1 - t, 3));
+    const s1 = ease(slice(0)), s2 = ease(slice(0.08)), s3 = ease(slice(0.16));
+    const shift = (s) => 'translateY(' + ((1 - s) * 10).toFixed(2) + 'px)';
+    const soft = (s) => 'blur(' + ((1 - s) * 0.9).toFixed(2) + 'px)';
+    const b = this.state.calm ? 1 : this.state.bgP;
+    return {
+      bgFilter: 'blur(' + (2 - b * 1.9).toFixed(2) + 'px) saturate(' + (0.78 + b * 0.34).toFixed(2) + ')',
+      bgVeil: 'rgba(238,240,243,' + (0.56 - b * 0.28).toFixed(3) + ')',
+      revealRef: (el) => { this._revealEl = el; },
+      cueOpacity: Math.max(0, 1 - p * 3.2).toFixed(3),
+      r1o: (s1 * 0.5).toFixed(3), r1t: shift(s1), r1b: soft(s1),
+      r2o: s2.toFixed(3), r2t: shift(s2), r2b: soft(s2),
+      r3o: s3.toFixed(3), r3t: shift(s3), r3b: soft(s3),
+      barBg: this.state.barDark ? 'rgba(28,28,26,0.62)' : 'rgba(255,255,255,0.34)',
+    };
+  }
+}
+
+</script>
+</body>
+</html>
