@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>window.__SM=window.matchMedia('(max-width: 820px)').matches;window.__A=function(p){return window.__SM&&typeof p==='string'?p.replace(/^(\.\/|assets\/)/,'assets-sm/'):p;};</script>
+<script>window.__SM=window.matchMedia('(max-width: 820px)').matches;window.__SMS=new Set(["260609_campherd_8472p25_web-mtpw1yui-7kgp.jpg","alfaro-exterior-angled-pool-and-house----mtpwe8gl-ox9h.jpg","bigtree-dusk.jpg","exterior2--2019_03_15-12_47_22-utc--mtpwk12u-gyck.jpg","gregory-exterior-front-wide-mtpwhmud-n8tx.jpg","imber-oak-arcade.jpg","imber-pond-wide.jpg","lindquist-library-wall.jpg","lostres-dusk-long.jpg","lostres-hero-pool.jpg","lostres-timber-ceiling2.jpg","ph-great-room.jpg","project-courtyard-oak.jpg","project-hacienda.jpg","project-imber-pond.jpg","project-lindquist-cabinetry.jpg","project-ranch-wide.jpg","project-szabo-exterior.jpg","project-terraced-garden.jpg","ravine-hero.jpg","ravine-pool-day.jpg","southtexas-dusk-oaks.jpg","sunday-glass-lawn.jpg","terraced-garden-oaks.jpg","tile-mosaic-bg.jpg","titlecard-imber.jpg"]);window.__A=function(p){if(!window.__SM||typeof p!=='string')return p;var n=p.replace(/^(\.\/|assets\/)/,'');return window.__SMS.has(n)?'assets-sm/'+n:p;};</script>
 <style>
     @media (max-width: 820px) {
-      [data-page-bg] { background-image: url('assets-sm/tile-mosaic-bg.jpg') !important; }
       [data-hero] { background-image: url('assets-sm/titlecard-imber.jpg') !important; }
     }
   </style>
@@ -32,6 +31,7 @@
     @media (max-width: 760px) {
       [data-glass-bar] { gap: 10px !important; padding: 0 14px !important; }
     }
+    [data-desktop-nav] a:not([aria-current]):hover { border-bottom-color: rgba(160,160,156,0.7) !important; }
     body { margin: 0; }
     [data-glass] { -webkit-backdrop-filter: blur(30px) saturate(1.7); }
     a { color: #1b1b1a; }
@@ -42,39 +42,33 @@
 <div style="background: #eceef1; fontFamily: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1b1b1a">
 
 
-  <div data-page-bg="true" style="position: fixed; inset: 0; zIndex: 0; backgroundImage: url('./tile-mosaic-bg.jpg'); backgroundSize: cover; backgroundPosition: center; filter: {{ bgFilter }}; transform: scale(1.08); pointerEvents: none"></div>
+  <div data-page-bg="true" style="position: fixed; inset: 0; zIndex: 0; background: #f6f4ef; pointerEvents: none"></div>
   <div style="position: fixed; inset: 0; zIndex: 0; background: {{ bgVeil }}; pointerEvents: none"></div>
   <div style="position: sticky; top: 0; zIndex: 10; height: 0">
-    <div style="padding: 14px 24px">
-    <div style="maxWidth: 1120px; margin: 0 auto; transform: translateX(calc(-1 * min(48px, max(0px, (100vw - 48px - 1120px) / 2))))">
-      
-    </div><div data-glass="true" data-glass-bar="true" style="position: relative; display: grid; gridTemplateColumns: 1fr auto 1fr; alignItems: center; gap: 32px; minHeight: 62px; padding: 0 26px; borderRadius: 999px; background: {{ barBg }}; transition: background 260ms ease; backdropFilter: blur(30px) saturate(1.7); WebkitBackdropFilter: blur(30px) saturate(1.7); border: 1px solid transparent; borderTopColor: rgba(255,255,255,0.5); borderLeftColor: rgba(255,255,255,0.4); boxShadow: inset 0 0 26px rgba(255,255,255,0.2), 0 12px 34px rgba(20,20,18,0.16)">
-        
-        <a href="https://www.instagram.com/truaxconstruction/" target="_blank" rel="noopener" aria-label="Instagram" style="justifySelf: start; position: relative; width: 24px; height: 24px; borderRadius: 8px; border: 2.4px solid rgba(255,255,255,0.92); display: block; opacity: 0.9; transition: opacity 200ms ease, background 200ms ease" style-hover="opacity: 1; background: rgba(255,255,255,0.14)">
-          <span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 10px; height: 10px; borderRadius: 999px; border: 2.4px solid rgba(255,255,255,0.92)"></span>
-          <span style="position: absolute; right: 2px; top: 2px; width: 4px; height: 4px; borderRadius: 999px; background: rgba(255,255,255,0.9)"></span>
-        </a>
-        <a href="index.html" style="justifySelf: center; display: block; lineHeight: 0"><img src="./truax-logo-white-inline.png" alt="Truax Construction — home" style="justifySelf: center; width: clamp(180px, 46vw, 440px); height: auto; display: block; filter: drop-shadow(0 1px 8px rgba(0,0,0,0.35))"></a><div data-desktop-nav="true" style="justifySelf: end; display: flex; flexShrink: 0; gap: 6px; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontWeight: 500; fontSize: 12.5px; letterSpacing: 0.2em; textTransform: uppercase">
-          <a href="about.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; opacity: 0.88; padding: 7px 12px; borderRadius: 999px; transition: background 200ms ease, opacity 200ms ease" style-hover="background: rgba(255,255,255,0.16); opacity: 1">About</a>
-          <a href="projects.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; opacity: 0.88; padding: 7px 12px; borderRadius: 999px; transition: background 200ms ease, opacity 200ms ease" style-hover="background: rgba(255,255,255,0.16); opacity: 1">Projects</a>
-          <a href="services.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; opacity: 0.88; padding: 7px 12px; borderRadius: 999px; transition: background 200ms ease, opacity 200ms ease" style-hover="background: rgba(255,255,255,0.16); opacity: 1">Services</a>
-          <a href="contact.html" style="color: #ffffff; textShadow: 0 1px 10px rgba(0,0,0,0.45); textDecoration: none; padding: 7px 12px; borderRadius: 999px; background: rgba(255,255,255,0.16)">Contact</a>
-        </div>
-        <details data-mobile-menu style="justifySelf: end; position: relative">
-          <summary aria-label="Menu" style="display: flex; alignItems: center; justifyContent: center; width: 44px; height: 44px; borderRadius: 999px; color: #ffffff">
-            <span style="display: block; width: 20px; height: 12px; borderTop: 2px solid rgba(255,255,255,0.92); borderBottom: 2px solid rgba(255,255,255,0.92); position: relative">
-              <span style="position: absolute; left: 0; right: 0; top: 4px; height: 2px; background: rgba(255,255,255,0.92)"></span>
-            </span>
-          </summary>
-          <div style="position: absolute; right: 0; top: 52px; minWidth: 200px; display: flex; flexDirection: column; padding: 10px; borderRadius: 20px; background: rgba(22,23,24,0.72); backdropFilter: blur(26px) saturate(1.4); WebkitBackdropFilter: blur(26px) saturate(1.4); border: 1px solid rgba(255,255,255,0.22); boxShadow: 0 22px 48px rgba(0,0,0,0.42)">
-            <a href="about.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">About</a>
-            <a href="projects.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Projects</a>
-            <a href="services.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Services</a>
-            <a href="contact.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: 'Trebuchet MS', Archivo, Helvetica, sans-serif; fontSize: 13px; letterSpacing: 0.18em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Contact</a>
-          </div>
-        </details>
-
+    <div data-glass-bar="true" ref="{{ hdrRef }}" style="display: grid; gridTemplateColumns: 1fr auto 1fr; gap: 24px; alignItems: center; height: {{ hdrH }}; padding: 0 clamp(18px, 3.4vw, 48px); background: {{ hdrBg }}; backdropFilter: {{ hdrBlur }}; WebkitBackdropFilter: {{ hdrBlur }}; borderBottom: 1px solid {{ hdrLine }}; transition: background 260ms ease, border-color 260ms ease">
+      <a href="https://www.instagram.com/truaxconstruction/" target="_blank" rel="noopener" aria-label="Instagram" style="justifySelf: start; position: relative; width: 22px; height: 22px; borderRadius: 7px; border: 2.2px solid {{ ink }}; display: block; transition: border-color 260ms ease">
+        <span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 8px; height: 8px; borderRadius: 999px; border: 2.2px solid {{ ink }}; transition: border-color 260ms ease"></span>
+      </a>
+      <a href="index.html" style="justifySelf: center; display: block; lineHeight: 0"><img src="assets/truax-logo-white-inline.png" alt="Truax Construction — home" style="width: clamp(180px, 40vw, 360px); height: auto; display: block; filter: {{ logoFilter }}; transition: filter 260ms ease"></a>
+      <div data-desktop-nav="true" style="justifySelf: end; display: flex; gap: 30px; fontFamily: Archivo, Helvetica, sans-serif; fontWeight: 600; fontSize: 15px; letterSpacing: 0.14em; textTransform: uppercase">
+          <a href="about.html" style="color: {{ ink }}; textShadow: {{ inkShadow }}; textDecoration: none; paddingBottom: 4px; borderBottom: 2px solid transparent; transition: color 260ms ease, border-color 200ms ease" style-hover="borderBottomColor: rgba(160,160,156,0.6)">About</a>
+          <a href="projects.html" style="color: {{ ink }}; textShadow: {{ inkShadow }}; textDecoration: none; paddingBottom: 4px; borderBottom: 2px solid transparent; transition: color 260ms ease, border-color 200ms ease" style-hover="borderBottomColor: rgba(160,160,156,0.6)">Projects</a>
+          <a href="services.html" style="color: {{ ink }}; textShadow: {{ inkShadow }}; textDecoration: none; paddingBottom: 4px; borderBottom: 2px solid transparent; transition: color 260ms ease, border-color 200ms ease" style-hover="borderBottomColor: rgba(160,160,156,0.6)">Services</a>
+          <a href="contact.html" aria-current="page" style="color: {{ ink }}; textShadow: {{ inkShadow }}; textDecoration: none; paddingBottom: 4px; borderBottom: 2px solid {{ ink }}; transition: color 260ms ease, border-color 200ms ease">Contact</a>
       </div>
+      <details data-mobile-menu style="justifySelf: end; position: relative">
+        <summary aria-label="Menu" style="display: flex; alignItems: center; justifyContent: center; width: 44px; height: 44px; borderRadius: 999px">
+          <span style="display: block; width: 20px; height: 12px; borderTop: 2px solid {{ ink }}; borderBottom: 2px solid {{ ink }}; position: relative">
+            <span style="position: absolute; left: 0; right: 0; top: 4px; height: 2px; background: {{ ink }}"></span>
+          </span>
+        </summary>
+        <div style="position: absolute; right: 0; top: 52px; minWidth: 200px; display: flex; flexDirection: column; padding: 10px; borderRadius: 16px; background: rgba(28,29,30,0.94); boxShadow: 0 22px 48px rgba(0,0,0,0.32)">
+            <a href="about.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: Archivo, Helvetica, sans-serif; fontWeight: 600; fontSize: 13px; letterSpacing: 0.16em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">About</a>
+            <a href="projects.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: Archivo, Helvetica, sans-serif; fontWeight: 600; fontSize: 13px; letterSpacing: 0.16em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Projects</a>
+            <a href="services.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: Archivo, Helvetica, sans-serif; fontWeight: 600; fontSize: 13px; letterSpacing: 0.16em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Services</a>
+            <a href="contact.html" style="color: #ffffff; textDecoration: none; padding: 15px 16px; borderRadius: 12px; minHeight: 44px; boxSizing: border-box; display: flex; alignItems: center; fontFamily: Archivo, Helvetica, sans-serif; fontWeight: 600; fontSize: 13px; letterSpacing: 0.16em; textTransform: uppercase" style-hover="background: rgba(255,255,255,0.14)">Contact</a>
+        </div>
+      </details>
     </div>
   </div>
 
@@ -82,12 +76,12 @@
     <div style="position: absolute; left: 0; right: 0; top: 0; height: 260px; background: linear-gradient(to bottom, rgba(16,18,20,0.5) 0%, rgba(16,18,20,0.22) 55%, rgba(16,18,20,0) 100%); pointerEvents: none"></div>
     <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 0 clamp(14px, 2vw, 28px) clamp(32px, 6vw, 56px)">
       <div style="maxWidth: 1760px; margin: 0 auto">
-        <div style="color: #ffffff; fontSize: clamp(28px, 7vw, 44px); lineHeight: 1.12; letterSpacing: -0.01em; textWrap: pretty; textShadow: 0 2px 22px rgba(0,0,0,0.42); maxWidth: 15em">Contact</div>
+        <div style="color: #ffffff; fontFamily: 'Cormorant Garamond', Cambria, Georgia, serif; fontWeight: 500; fontSize: clamp(36px, 8vw, 60px); lineHeight: 1.05; letterSpacing: 0; textWrap: pretty; textShadow: 0 2px 22px rgba(0,0,0,0.42); maxWidth: 15em">Contact</div>
       </div>
     </div>
   </div>
 
-  <div style="position: relative; zIndex: 1; maxWidth: 1120px; margin: 0 auto; padding: clamp(32px, 6vw, 72px) clamp(16px, 4vw, 24px) 120px">
+  <div style="position: relative; zIndex: 1; maxWidth: 1760px; margin: 0 auto; padding: clamp(32px, 6vw, 72px) clamp(14px, 2vw, 28px) 120px">
     <div data-glass="true" style="padding: clamp(26px, 6vw, 44px) clamp(18px, 3vw, 48px); borderRadius: 20px; background: rgba(255,255,255,0.5); backdropFilter: blur(30px) saturate(0.85); WebkitBackdropFilter: blur(30px) saturate(0.85); border: 1px solid transparent; borderTopColor: rgba(255,255,255,0.55); borderLeftColor: rgba(255,255,255,0.45); boxShadow: inset 0 0 26px rgba(255,255,255,0.2), 0 12px 34px rgba(20,20,18,0.12); display: grid; gridTemplateColumns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(36px, 5vw, 64px); alignItems: stretch">
 
     <div style="display: flex; flexDirection: column; gap: 32px; height: 100%">
@@ -152,8 +146,8 @@ class Component extends DCLogic {
       // hand off to the dark bar the moment the glass capsule (bottom edge at y 78)
       // stops overlapping the hero photo
       const dark = !hero || hero.getBoundingClientRect().bottom <= 78;
-      if (dark !== this.state.barDark || Math.abs(bgP - this.state.bgP) > 0.004) {
-        this.setState({ bgP: bgP, barDark: dark });
+      if (dark !== this.state.barDark) {
+        this.setState({ barDark: dark });
       }
     };
     this._bgQueue = () => { if (!this._bgRaf) this._bgRaf = requestAnimationFrame(this._onBg); };
@@ -178,8 +172,23 @@ class Component extends DCLogic {
     const calm = this.state.calm;
     const b = calm ? 1 : this.state.bgP;
     return {
+      hdrRef: this._hdrRef || (this._hdrRef = (el) => {
+        if (this._hdrOff) { this._hdrOff(); this._hdrOff = null; }
+        if (!el) return;
+        const on = () => { const v = window.scrollY > 40; if (v !== this.state.hdrS) this.setState({ hdrS: v }); };
+        window.addEventListener('scroll', on, { passive: true });
+        this._hdrOff = () => window.removeEventListener('scroll', on);
+        on();
+      }),
+      hdrBg: this.state.hdrS ? 'rgba(26,27,28,0.58)' : 'rgba(26,27,28,0)',
+      hdrBlur: this.state.hdrS ? 'blur(22px) saturate(1.2)' : 'none',
+      hdrLine: this.state.hdrS ? 'rgba(255,255,255,0.14)' : 'transparent',
+      hdrH: '76px',
+      ink: '#ffffff',
+      inkShadow: this.state.hdrS ? 'none' : '0 1px 8px rgba(0,0,0,0.4)',
+      logoFilter: this.state.hdrS ? 'none' : 'drop-shadow(0 1px 8px rgba(0,0,0,0.35))',
       bgFilter: 'blur(' + (5 - b * 4.4).toFixed(2) + 'px) saturate(' + (0.62 + b * 0.5).toFixed(2) + ')',
-      bgVeil: 'rgba(238,240,243,' + (0.7 - b * 0.34).toFixed(3) + ')',
+      bgVeil: 'transparent',
       sent: this.state.sent,
       sentNote: this.state.note,
       sending: this.state.sending,
